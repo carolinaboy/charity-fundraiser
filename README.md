@@ -1,1 +1,1 @@
-# charity-fundraiser
+# charity-event

@@ -1,0 +1,130 @@
+@font-face {
+ font-family: "Gunplay";
+ src: url("fonts/gunplay rg.ttf");
+}
+
+
+body {
+  background-color: #dddddd;
+  background-image: url("army.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+div.container {
+  background-color: #07144B;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "header"
+    "about"
+    "event"
+    "signup"
+    "footer";
+
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 800px;
+}
+
+header {
+
+  grid-area: header;
+}
+
+img.center{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+}
+
+
+img{
+  padding: 5px;
+  max-width: 100%;
+}
+
+h1{
+  text-align: center;
+  font-size: 40px;
+  color: #BAA701;
+  font-family: Gunplay;
+}
+
+h2{
+  font-size: 25px;
+  color: #00680c;
+}
+
+main {
+
+}
+
+section {
+    min-height: 300px;
+}
+
+section#about {
+
+  grid-area: about;
+  padding: 10px;
+  font-size: 20px;
+  color: #ffffff;
+
+}
+
+section#event {
+
+  grid-area: event;
+  padding: 10px;
+  font-size: 20px;
+  color: #ffffff;
+}
+
+section#signup {
+
+  grid-area: signup;
+  padding: 10px;
+  color: #ffffff;
+}
+
+footer {
+
+  grid-area: footer;
+  text-align: center;
+  font-size: 15px;
+  color: #ffffff;
+}
+
+/* unvisited link */
+a:link {
+    color: #BAA701;
+}
+
+/* visited link */
+a:visited {
+    color: #BAA701;
+}
+
+/* mouse over link */
+a:hover {
+    color: #BAA701;
+}
+
+/* selected link */
+a:active {
+    color: #BAA701;
+}
+
+@media (min-width: 800px) {
+  div.container {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "header header"
+      "about about"
+      "event signup"
+      "footer footer";
+  }
+}
